@@ -1,0 +1,29 @@
+## Lottery API
+
+- sell lottery ticket
+- update lottery ticket
+- delete lottery ticket
+- get all tickets
+- get ticket by id
+- bulk buy (user can buy multiple ticket at a time)
+- raffle draw
+
+
+Ticket:
+ - id
+ - username
+ - price
+ - timestamps 
+
+Routes:
+ -/tickets/t/:ticketId  - find ticket by id
+ -tickets/t/:ticketId   - update ticket by id
+ -tickets/t/:ticketId   - delete ticket by id
+ -/tickets/u/:username  - find tickets for a given user
+ -/tickets/u/:username  - patch update tickets by username
+ -/tickets/u/:username  - delete tickets for a given user
+ -/ticket/sell          - create tickets
+ -/ticket/bulk          - bulk sell ticket
+ -/tickets/draw         - raffle draw
+ -/ticket               - find all tickets
+
